@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="search-bar">
+            <input  autocomplete="off" type="text" class="search-city" id="cityName" placeholder="Enter city name">
+            <button type="submit" class="search-btn" title="submit">
+                <img src="images/search.png" alt="">
+            </button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-img" alt="">
+            <h1 class="temperature">25°C</h1>
+            <h2 class="city">Aktobe</h2>
+            <div class="temps">
+                <h4 class="feels-like"></h4>
+                <h4 class="min-temp"></h4>
+                <h4 class="max-temp"></h4>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">20 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

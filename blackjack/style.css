@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+    color: #fff;
+}
+body {
+    background: url(./cards/tableBackground.png) center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.dealer-cards, .player-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+img {
+    max-width: 140px;
+    transition: .3s;
+}
+h1 {
+    font-size: 46px;
+    margin-block: 25px;
+}
+.wrapper {
+    text-align: center;
+}
+.actions {
+    margin-block: 40px 20px;
+}
+button {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #0c5f09;
+    transition: .3s;
+    cursor: pointer;
+}
+.res {
+    font-size: 46px;
+    font-weight: 600;
+}
+@media (hover:hover) {
+    button:hover {
+        background-color: #22851e;
+        transform: translateY(-5px);
+    }
+    img:hover {
+        transform: translateY(-10px);
+    }
+}
